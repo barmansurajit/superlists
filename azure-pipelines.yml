@@ -40,6 +40,7 @@ steps:
 - script: |
     python -m pip install --upgrade pip setuptools wheel
     pip install django==$(DJANGO_VERSION)
+    pip install selenium
     pip install unittest-xml-reporting
   displayName: 'Install prerequisites'
 
