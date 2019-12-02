@@ -45,6 +45,11 @@ steps:
   displayName: 'Install prerequisites'
 
 - script: |
+    sudo apt install google-chrome-stable
+    sudo apt-get install firefox
+  displayName: 'Install Chrome and Firefox'
+  
+- script: |
     pushd '$(projectRoot)'
     python manage.py test --testrunner xmlrunner.extra.djangotestrunner.XMLTestRunner --no-input
     python functional_tests.py
