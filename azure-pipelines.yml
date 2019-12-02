@@ -10,9 +10,8 @@ pool:
   vmImage: 'ubuntu-latest'
 strategy:
   matrix:
-    Python37:
+    Python37_Django226:
       PYTHON_VERSION: '3.7'
-    Django226:
       DJANGO_VERSION: '2.2.6'
   maxParallel: 3
 
